@@ -1,7 +1,8 @@
-package InciandoNoSpring.PrimeiraAplicacao.Service;
+package InciandoNoSpring.ReservaHotelChaveEletronica.Service;
 
-import InciandoNoSpring.PrimeiraAplicacao.Model.M_Cadastro;
-import InciandoNoSpring.PrimeiraAplicacao.Repository.R_Cadastro;
+
+import InciandoNoSpring.ReservaHotelChaveEletronica.Model.M_Cadastro;
+import InciandoNoSpring.ReservaHotelChaveEletronica.Repository.R_Cadastro;
 import org.springframework.stereotype.Service;
 
 import java.util.List;

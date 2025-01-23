@@ -1,8 +1,9 @@
-package InciandoNoSpring.PrimeiraAplicacao.Controller;
+package InciandoNoSpring.ReservaHotelChaveEletronica.Controller;
 
 
-import InciandoNoSpring.PrimeiraAplicacao.Service.S_Cadastro;
-import InciandoNoSpring.PrimeiraAplicacao.Service.S_Usuario;
+
+import InciandoNoSpring.ReservaHotelChaveEletronica.Service.S_Cadastro;
+import InciandoNoSpring.ReservaHotelChaveEletronica.Service.S_Usuario;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpSession;
 

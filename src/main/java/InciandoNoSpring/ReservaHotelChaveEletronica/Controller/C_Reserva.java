@@ -1,11 +1,12 @@
-package InciandoNoSpring.PrimeiraAplicacao.Controller;
+package InciandoNoSpring.ReservaHotelChaveEletronica.Controller;
 
-import InciandoNoSpring.PrimeiraAplicacao.Model.M_Reserva;
 
-import InciandoNoSpring.PrimeiraAplicacao.Repository.R_Reserva;
 
-import InciandoNoSpring.PrimeiraAplicacao.Service.S_Reserva;
 
+
+import InciandoNoSpring.ReservaHotelChaveEletronica.Model.M_Reserva;
+import InciandoNoSpring.ReservaHotelChaveEletronica.Repository.R_Reserva;
+import InciandoNoSpring.ReservaHotelChaveEletronica.Service.S_Reserva;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;

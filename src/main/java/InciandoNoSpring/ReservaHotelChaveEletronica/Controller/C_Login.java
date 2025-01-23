@@ -1,7 +1,7 @@
-package InciandoNoSpring.PrimeiraAplicacao.Controller;
+package InciandoNoSpring.ReservaHotelChaveEletronica.Controller;
 
-import InciandoNoSpring.PrimeiraAplicacao.Repository.R_Reserva;
-import InciandoNoSpring.PrimeiraAplicacao.Service.S_Usuario;
+
+import InciandoNoSpring.ReservaHotelChaveEletronica.Service.S_Usuario;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpSession;
 import org.springframework.stereotype.Controller;
@@ -19,10 +19,16 @@ public class C_Login {
         return "Login/login";
     }
 
+    @GetMapping("/logout")
+    public String logout(HttpSession session){
+        session.setAttribute("usuario", null);
+        return "redirect:/login";
+    }
+
     @PostMapping("/")
     public String processLogin(@RequestParam("usuario") String usuario, @RequestParam("senha") String senha, HttpSession session, HttpServletRequest request) {
 
-        session.setAttribute("usuario",S_Usuario.checarLogin(usuario, senha));
+        session.setAttribute("usuario", S_Usuario.checarLogin(usuario, senha));
         if (session.getAttribute("usuario") != null) {
             request.setAttribute("usuario", session.getAttribute("usuario"));
            // get do id de usuario logado

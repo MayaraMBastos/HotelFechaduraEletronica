@@ -1,11 +1,9 @@
-package InciandoNoSpring.PrimeiraAplicacao.Model;
+package InciandoNoSpring.ReservaHotelChaveEletronica.Model;
 
-import InciandoNoSpring.PrimeiraAplicacao.Controller.C_Reserva;
-import InciandoNoSpring.PrimeiraAplicacao.Program.ArduinoSerial;
+
+
 import jakarta.persistence.*;
 
-import java.sql.Date;
-import java.sql.Time;
 
 @Entity
 @Table(name = "reserva")

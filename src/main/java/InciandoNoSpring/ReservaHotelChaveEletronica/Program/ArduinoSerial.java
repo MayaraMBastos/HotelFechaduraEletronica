@@ -1,4 +1,4 @@
-package InciandoNoSpring.PrimeiraAplicacao.Program;
+package InciandoNoSpring.ReservaHotelChaveEletronica.Program;
 
 import gnu.io.CommPortIdentifier;
 import gnu.io.PortInUseException;

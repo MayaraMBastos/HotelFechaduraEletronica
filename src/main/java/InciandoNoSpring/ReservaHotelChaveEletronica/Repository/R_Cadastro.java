@@ -1,7 +1,8 @@
-package InciandoNoSpring.PrimeiraAplicacao.Repository;
+package InciandoNoSpring.ReservaHotelChaveEletronica.Repository;
 
-import InciandoNoSpring.PrimeiraAplicacao.Model.M_Cadastro;
 
+
+import InciandoNoSpring.ReservaHotelChaveEletronica.Model.M_Cadastro;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 import org.springframework.stereotype.Repository;

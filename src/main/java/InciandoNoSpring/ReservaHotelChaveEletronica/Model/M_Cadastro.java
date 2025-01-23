@@ -1,4 +1,4 @@
-package InciandoNoSpring.PrimeiraAplicacao.Model;
+package InciandoNoSpring.ReservaHotelChaveEletronica.Model;
 
 import jakarta.persistence.*;
 
