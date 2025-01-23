@@ -14,7 +14,7 @@ import org.springframework.web.bind.annotation.SessionAttributes;
 @SessionAttributes("usuario")
 public class C_Login {
 
-    @GetMapping("/")
+    @GetMapping("/login")
     public String login() {
         return "Login/login";
     }

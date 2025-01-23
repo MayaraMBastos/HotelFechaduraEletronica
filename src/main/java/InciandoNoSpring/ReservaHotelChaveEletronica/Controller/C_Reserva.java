@@ -30,6 +30,11 @@ public class C_Reserva {
         return mv;
     }
 
+    @GetMapping("/reservado")
+    public String pagReservado(){
+        return "/reservado";
+    }
+
     @GetMapping("/Reserva/{senha_porta}")
     public M_Reserva listaSenhaPorta(@PathVariable(value = "senha_porta") String senha_porta) {
 
