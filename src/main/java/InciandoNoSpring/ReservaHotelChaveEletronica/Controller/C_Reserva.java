@@ -7,6 +7,7 @@ package InciandoNoSpring.ReservaHotelChaveEletronica.Controller;
 import InciandoNoSpring.ReservaHotelChaveEletronica.Model.M_Reserva;
 import InciandoNoSpring.ReservaHotelChaveEletronica.Repository.R_Reserva;
 import InciandoNoSpring.ReservaHotelChaveEletronica.Service.S_Reserva;
+import jakarta.servlet.http.HttpSession;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
@@ -44,10 +45,17 @@ public class C_Reserva {
 
     @PostMapping("/reserva")
     public String salvaReserva(@RequestParam("id_hotel") String id_hotel, @RequestParam("id_quarto") String id_quarto, @RequestParam("check_in_data") String check_in_data, @RequestParam("check_out_data") String check_out_data, @RequestParam("check_in_hora") String check_in_hora, @RequestParam("check_out_hora") String check_out_hora) {
-        //Long mUsu = (Long) session.getAttribute("id_user");
+        // tem q passar o id de usuario pro banco
 
         S_Reserva.postReserva(Long.parseLong(id_hotel), Long.parseLong(id_quarto), check_in_data, check_in_hora, check_out_data, check_out_hora);
         return "redirect:/reservado";
+    }
+
+    @PostMapping("/reservado")
+    @ResponseBody
+    public M_Reserva pagReservado(HttpSession session, @RequestParam("id_hotel") String id_hotel, @RequestParam("id_quarto") String id_quarto, @RequestParam("check_in_data") String check_in_data, @RequestParam("check_out_data") String check_out_data, @RequestParam("check_in_hora") String check_in_hora, @RequestParam("check_out_hora") String check_out_hora) {
+// passar os dados do banco pro view com thymeleaf
+        return modelR; // para nao dar erro no retorno
     }
 
     @PutMapping("/reserva")

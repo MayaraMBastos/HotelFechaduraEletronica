@@ -9,8 +9,10 @@ public class M_Usuario {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "id", unique = true)
     private Long id;
+    private String nome;
     private String usuario;
     private String senha;
+    private String endereco;
 
     public Long getId() {
         return id;
@@ -30,6 +32,22 @@ public class M_Usuario {
 
     public String getSenha() {
         return senha;
+    }
+
+    public String getNome() {
+        return nome;
+    }
+
+    public void setNome(String nome) {
+        this.nome = nome;
+    }
+
+    public String getEndereco() {
+        return endereco;
+    }
+
+    public void setEndereco(String endereco) {
+        this.endereco = endereco;
     }
 
     public void setSenha(String senha) {
